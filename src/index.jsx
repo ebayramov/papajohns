@@ -11,8 +11,8 @@ import App from './components/App.jsx'
 import Error from './pages/Error.jsx'
 
 const router = createBrowserRouter([
-  {path: "/", element: <App />, children: [
-    {path: "/", element: <Pizza /> },
+  {path: "/papajohns/", element: <App />, children: [
+    {path: "/papajohns/", element: <Pizza /> },
     {path: "main", element: <Main /> },
     {path: "pizza", element: <Pizza /> },
     {path: "contact", element: <Contact /> },

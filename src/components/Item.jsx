@@ -4,7 +4,7 @@ import { pizzaData } from ".."
 import { orderCart } from "./App"
 
 function Item({p}) {
-    const path = "./assets/img/"
+    const path = import.meta.env.BASE_URL + "./assets/img/"
     const [quant, setQuant] = useState(1)
     const [currSize, setCurrSize] = useState( Object.keys(p.price)[0] )
     const {size, pizza} = useContext(pizzaData)
